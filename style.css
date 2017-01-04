@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'ganji';
+    src: url('fonts/raidercrusader.ttf');
+}
+
+@font-face {
+    font-family: 'hana';
+    src: url('fonts/BMHANNA_11yrs_ttf.ttf');
+}
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+::-webkit-scrollbar {
+    display: none;
+}
+body {
+    margin: 0;
+    font-family: ganji;
+}
+
+h1{
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+.views {
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+#side-navigation{
+    position: fixed;
+    right: 0vw;
+    bottom: 20vh;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #000;
+    border-radius: 10%;
+    width: 10vw;
+    font-size: 1vw;
+    z-index: 20;
+}
+#side-navigation li{
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+#main-page {
+    text-align: center;
+    background-image: url('imgs/background.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+#background-cover {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+#title {
+    font-size: 5em;
+    position: relative;
+    top: 35%;
+}
+
+#start {
+    width: 8rem;
+    height: 3rem;
+    font-size: 2rem;
+    background-color: rgba(255, 0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 5%;
+    display: inline-block;
+    position: absolute;
+    left: 47%;
+    top: 65%;
+    text-align: center;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+#start:hover {
+    background: #fff;
+    color: #000;
+    animation-name: button-rrr;
+    animation-duration: 1s;
+}
+
+#intro-page {
+    text-align: center;
+    height: 50vh;
+    padding-top: 5vh;
+}
+
+#intro {
+    font-size: 4rem;
+    text-align: center;
+}
+
+#intro-desc {
+    margin-top: 8vh;
+    font-family: hana;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#content {
+    width: 70vw;
+    height: 80vh;
+    position: relative;
+    top: 10vh;
+    left: 15vw;
+}
+
+#participate-page {
+    background-image: url('imgs/participate.jpg');
+    background-size: cover;
+}
+
+#school-intro-background {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.school-logos {
+    width: 8vw;
+    height: 8vw;
+}
+
+.school-column {
+    font-family: hana;
+    display: inline-block;
+    width: 25vw;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 2%;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+#subject-page{
+    height: 30rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+#subject-content{
+    position: relative;
+    top: 5vh;
+}
+
+#subject-list{
+        font-family: 'Raleway',sans-serif;
+}
+
+#agenda-page{
+    background-color: #051425;
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+}
+table{
+    width: 35vw;
+}
+
+.agenda-table td{
+    border: 1px solid #fff;
+    padding: 1rem;
+    margin: 0;
+    font-family: 'Raleway',sans-serif;
+}
+.agenda-table{
+    position: relative;
+    top: 10vh;
+    float: left;
+    margin-left: 10vw;
+}
+
+
+#judge-page{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#judge-list{
+    height: 70vh;
+    width: 100vw;
+    position: relative;
+    top: 12.5vh;
+}
+
+.judge-li{
+    height: 100%;
+    font-weight: bold;
+    display: inline-block;
+    width: 20vw;
+    margin: 0;
+    float: left;
+    vertical-align: middle;
+    background: gray;
+    color: white;
+    cursor: pointer;
+}
+
+.judge-li>span{
+    position: relative;
+    top: 40%;
+}
+
+.judge-cover{
+    background-color: rgba(213,213,213,0.3);
+    position: absolute;
+    width: 20vw;
+    height: 70vh;
+    display: inline-block;
+    float: left;
+}
+
+#apply-page{
+    background-image: url("imgs/apply.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#apply-cover{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+}
+#apply-form{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    top: 5vh;
+}
+
+#apply-form>form{
+    position: relative;
+    top: 10vh;
+    left: 40%;
+    width: 20%;
+    padding: 0.5em;
+    font-family: "hana";
+}
+
+form>input:not([type=radio]),select {
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 2rem;
+    margin-top: 2vh;
+    border-radius: 1px;
+    border-style: hidden;
+}
+
+form input[type=radio], label{
+    float: left;
+    margin: 1vh 1.25vw;
+}
+form input[type=radio]{
+    position: relative;
+    top: 1vh;
+}
+
+form button{
+    width: 100%;
+    margin-top: 2vh;
+    height: 4vh;
+    font-size: 1.5rem;
+    font-family: "hana";
+    background-color: rgba(255, 0, 0, 0);
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+@keyframes button-rrr {
+    25% {
+        transform: rotateX(45deg);
+    }
+    50% {
+        transform: rotateX(-45deg);
+    }
+    75% {
+        transform: rotateX(45deg);
+    }
+    100% {
+        transform: rotateX(-45deg);
+    }
+}
