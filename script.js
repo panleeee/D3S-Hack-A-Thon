@@ -1,6 +1,5 @@
 $(function() {
 
-    var isShowed = false; // used in function of window scroll event
     $("#side-navigation").hide(); // hide side navigation
 
     // regist on click event that start button of main page
@@ -16,18 +15,13 @@ $(function() {
 
     // check scroll offset and set isShowed value
     $(window).scroll(function() {
-        if (isShowed) {
             if ((window.pageYOffset || document.documentElement.scrollBottom) < $("#intro-page").offset().top) {
                 $("#side-navigation").hide();
-                isShowed = false;
-                return false;
+                return ;
             }
-        } else {
-            if ((window.pageYOffset || document.documentElement.scrollBottom) > $("#intro-page").offset().top) {
-                isShowed = true;
+            else if ((window.pageYOffset || document.documentElement.scrollBottom) > $("#intro-page").offset().top) {
                 $("#side-navigation").show();
             }
-        }
     });
 });
 
