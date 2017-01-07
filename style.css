@@ -138,12 +138,13 @@ ul{
 .school-column {
     font-family: hana;
     display: inline-block;
-    width: 25vw;
+    width: 50%;
+    float: left;
     text-align: center;
-    margin-left: 5%;
     margin-top: 2%;
     font-size: 2rem;
     padding: 2rem;
+    box-sizing: border-box;
 }
 
 #subject-page{
