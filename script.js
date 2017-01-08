@@ -1,6 +1,6 @@
 $(function() {
 
-    $("#side-navigation").hide(); // hide side navigation
+    // $("#side-navigation").hide(); // hide side navigation
 
     // regist on click event that start button of main page
     $("#start").on("click", function() {
@@ -14,15 +14,15 @@ $(function() {
     });
 
     // check scroll offset and set isShowed value
-    $(window).scroll(function() {
-            if ((window.pageYOffset || document.documentElement.scrollBottom) < $("#intro-page").offset().top) {
-                $("#side-navigation").hide();
-                return ;
-            }
-            else if ((window.pageYOffset || document.documentElement.scrollBottom) > $("#intro-page").offset().top) {
-                $("#side-navigation").show();
-            }
-    });
+    // $(window).scroll(function() {
+    //         if ((window.pageYOffset || document.documentElement.scrollBottom) < $("#intro-page").offset().top) {
+    //             $("#side-navigation").hide();
+    //             return ;
+    //         }
+    //         else if ((window.pageYOffset || document.documentElement.scrollBottom) > $("#intro-page").offset().top) {
+    //             $("#side-navigation").show();
+    //         }
+    // });
 });
 
 function scrollPage(element) {
